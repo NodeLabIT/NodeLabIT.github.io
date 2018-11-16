@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - WebSuite Dokumentation</title>
+    <title>EventHandler - WebSuite Dokumentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -32,33 +32,435 @@
 
 
 
+
+<section>
+
+<header>
+    
+        <h2>
+        EventHandler
+        </h2>
+        
+            <div class="class-description">Delivers an endpoint to listen on and emit events to the WebSuite's event-system</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
     
 
-
-
-
-
-
-
-
+    
 
     
 
+    
 
-    <section class="readme">
-        <article><p><a href="https://www.codacy.com/app/ilouHD/WebSuite-Core?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NodeLabIT/WebSuite-Core&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/05dfdb44e89241e58d7c7f4a779c6eef" alt="Codacy Badge"></a> <a href="https://travis-ci.org/NodeLabIT/WebSuite-Core"><img src="https://travis-ci.org/NodeLabIT/WebSuite-Core.svg?branch=development" alt="Build Status"></a> <a href="https://github.com/NodeLabIT/WebSuite-Core"><img src="https://img.shields.io/badge/dynamic/json.svg?label=WebSuite-Core&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FNodeLabIT%2FWebSuite-Core%2Fdevelopment%2Fpackage.json&amp;query=version&amp;colorB=blue" alt="Version"></a></p>
-<h1>WebSuite</h1><p>Die WebSuite ist ein Content-Management-System mit neuester Technik. Die Verbindung von Node.js, socket.io und Vue.js sorgt dabei für ein modernes System, das eine unvergleichbare Einzigartigkeit und Interaktion bietet, wie sie bisher kein CMS erreichen konnte. Inhalte können somit schnell und Live aktualisiert werden und auch erreichen wir mit Vue.js die Möglichkeit auf eine Single-Page-Application.</p>
-<p>Allgemein bietet die WebSuite einen Core, über den sich vielerlei Plugins umsetzen lassen, wodurch die WebSuite auch mit vielen Plugins erweiterbar ist.</p>
-<h1>WebSuite Core</h1><p>Der Core ist das Heiligtum der gesamten Software und stellt somit den Kern der gesamten Anwendung dar. Der Core beinhaltet alle wichtigen Funktionen und dient als Schnittstelle für Entwickler. Er stellt dabei alle für Entwickler relevanten Funktionen wie z.B. die Anbindung an Datenbanken, Anbindung an den Mailserver, Socketserver, sowie verschiedene andere Nützlichkeiten (Utils) bereit.</p>
-<p>Neben den genannten Funktionen für Entwickler, verfügt der Core über Funktionen zur einfachen Bedienbarkeit der Anwendung. Dazu gehört insbesondere das Control Panel, das die einfache Bedienbarkeit der gesamten Anwendung unterstützt und viele Einstellungsmöglichkeiten bietet.</p>
-<p>Der Core generell wird im Clusterbetrieb laufen. So ist es einfach im laufenden Betrieb das System neuzustarten, ohne, dass der Nutzer davon etwas mitbekommt. Ebenfalls kann so garantiert werden, dass im Falle eines Fehlers, ein &quot;Subsystem&quot; vernünftig den Fehler loggen und sich neustarten kann.</p>
-<h1>Discord</h1><p>Du möchtest über alles informiert werden? Dann trete noch heute unserem Discord-Server bei: https://discord.gg/AmBnFbA</p>
-<h1>Milestones</h1><p>Alle Milestones des Projektes sind hier einsehbar: https://github.com/NodeLabIT/WebSuite-Core/milestones</p>
-<h1>JSDocs</h1><p>JSDocs können mit <code>jsdoc -c jsdoc.json</code> generiert werden. Dazu muss <code>jsdoc</code> global als depencdency installiert sein.
-Weiterhin muss das <a href="https://github.com/NodeLabIT/JSDoc-Theme">NodeLab-Theme für JSDoc</a> relativ zur <code>jsdoc.json</code> gesehen im Ordner <code>../JSDoc-Theme/</code> liegen.</p></article>
-    </section>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+-->
+
+
+
+<hr/>
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methoden</h3>
+
+        
+            
+
+	
+		
+
+		<h4 class="name" id="emit"><span class="type-signature"></span>emit<span class="signature">(eventName, data)</span><span class="type-signature"></span></h4>
+
+		
+	
+
+
+
+<div class="description">
+    Fire an event to the WebSuite's event-system by defining an event-name and attaching (optional) data to the event
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The name of the event you want to fire.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Optional Object/Array containing data that may be important to listeners.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+-->
+
+
+
+<hr/>
+        
+            
+
+	
+		
+
+		<h4 class="name" id="on"><span class="type-signature"></span>on<span class="signature">(eventName, listener)</span><span class="type-signature"></span></h4>
+
+		
+	
+
+
+
+<div class="description">
+    Define a callback that is executed when an event with the given event-name is fired.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>eventName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The name of the event you want to listen on.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">EventEmitter~onEvent</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The callback that is executed when the event is fired.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+-->
+
+
+
+<hr/>
+        
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
